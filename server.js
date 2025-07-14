@@ -23,7 +23,7 @@ app.post('/contato', (req, res) => {
 
     var nome = req.body.nome;
     var email = req.body.email;
-    var titulo = req.body.titulo;
+    var assunto = req.body.assunto;
     var mensagem = req.body.mensagem;
      res.send(`
     <!DOCTYPE html>
@@ -40,7 +40,7 @@ app.post('/contato', (req, res) => {
         <br>
         <p><strong>Email:</strong> ${email}</p>
         <br>
-        <p><strong>Titulo:</strong> ${titulo}</p>
+        <p><strong>Titulo:</strong> ${assunto}</p>
         <br>
         <p><strong>Mensagem:</strong>${mensagem}</p>
         <br>
